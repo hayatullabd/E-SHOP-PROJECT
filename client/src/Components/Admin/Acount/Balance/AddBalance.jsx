@@ -48,7 +48,7 @@ const AddBalance = ({ refetch, setBalanceAddShow }) => {
 
   const addAcount = (data) => {
     const url =
-      "http://localhost:5000/api/v2/accounts/opening-balance";
+      "https://e-shop-project-two.vercel.app/api/v2/accounts/opening-balance";
     const body = {
       accountName: data.accountName,
       amount: Number(data.amount),

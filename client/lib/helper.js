@@ -1,5 +1,5 @@
-const base_url = "http://localhost:5000/api/v1";
-export const base_url_v2 = "http://localhost:5000/api/v2";
+const base_url = "https://e-shop-project-two.vercel.app/api/v1";
+export const base_url_v2 = "https://e-shop-project-two.vercel.app/api/v2";
 
 export const products = async (query = "") => {
   const response = await fetch(`${base_url}/product?status=true&${query}`);
@@ -70,7 +70,7 @@ export const fetchProduct = async (id) => {
 };
 export const getCategories = async () => {
   const response = await fetch(
-    `http://localhost:5000/api/v1/category?status=true`
+    `https://e-shop-project-two.vercel.app/api/v1/category?status=true`
   );
   const json = await response.json();
   return json;
@@ -78,7 +78,7 @@ export const getCategories = async () => {
 
 export const getCategories2 = async () => {
   const response = await fetch(
-    `http://localhost:5000/api/v1/category`
+    `https://e-shop-project-two.vercel.app/api/v1/category`
   );
   const json = await response.json();
   return json;
@@ -97,7 +97,7 @@ export const getCoupons = async (query = "") => {
 
 export const getCategoriesItem = async () => {
   const response = await fetch(
-    `http://localhost:5000/api/v1/category`
+    `https://e-shop-project-two.vercel.app/api/v1/category`
   );
   const json = await response.json();
   return json;
@@ -105,7 +105,7 @@ export const getCategoriesItem = async () => {
 
 export const getCategoriesAndSubCategory = async () => {
   const response = await fetch(
-    `http://localhost:5000/api/v1/category/category-and-subcategory`
+    `https://e-shop-project-two.vercel.app/api/v1/category/category-and-subcategory`
   );
   const json = await response.json();
   return json;

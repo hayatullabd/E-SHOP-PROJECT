@@ -44,17 +44,17 @@ const Product = () => {
   // ---------------for pagination-----------------------
 
   const productUrl = {
-    url: `http://localhost:5000/api/v1/product/?limit=10000&page=1&sort=-createdAt`,
+    url: `https://e-shop-project-two.vercel.app/api/v1/product/?limit=10000&page=1&sort=-createdAt`,
   };
 
   //---------------------------------------------------------------catgories filter-----------------------------
   const handleFilterWithParantCategory = async (event) => {
-    productUrl.url = `http://localhost:5000/api/v1/product/?limit=10000&page=1&category=${event.target.value}`;
+    productUrl.url = `https://e-shop-project-two.vercel.app/api/v1/product/?limit=10000&page=1&category=${event.target.value}`;
     getFetchFunction(productUrl.url, setProducts);
   };
 
   const handleFilterWithParantCategory2 = async (event) => {
-    productUrl.url = `http://localhost:5000/api/v1/product/?limit=10000&page=1&subCategory=${event.target.value}`;
+    productUrl.url = `https://e-shop-project-two.vercel.app/api/v1/product/?limit=10000&page=1&subCategory=${event.target.value}`;
     getFetchFunction(productUrl.url, setProducts);
   };
 

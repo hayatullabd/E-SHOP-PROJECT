@@ -117,7 +117,7 @@ const CheckOut = ({ data, loading }) => {
   //     const productIdAndQuantity = allProducts?.map((item) => {
   //       return { id: item?._id, quantity: item?.quantity };
   //     });
-  //     const url = "http://localhost:5000/api/v1/order/get-total-price";
+  //     const url = "https://e-shop-project-two.vercel.app/api/v1/order/get-total-price";
   //     handlePostMethod(url, productIdAndQuantity, setTotalPriceOfCartItem);
   //   }
   //   if (allProducts?.length > 0) {
