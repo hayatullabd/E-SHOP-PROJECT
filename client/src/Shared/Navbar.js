@@ -148,7 +148,7 @@ const Navbar = () => {
             <div className="">
               <Link href={"/"} className="">
                 <Image
-                  src={"/bacola-logo.png"}
+                  src={"/logo.png"}
                   alt="logo"
                   height={300}
                   width={500}
