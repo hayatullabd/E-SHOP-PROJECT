@@ -17,7 +17,7 @@ const ProductsTableItemsRow = ({ product, index }) => {
   const [modalProductData, setModalProductData] = React.useState({});
   const router = useRouter();
 
-  let fethUrl = "http://localhost:5000/api/v1/product/";
+  let fethUrl = "https://uu-e-shop-server.vercel.app/api/v1/product/";
 
   const handleDeleteProduct = (id) => {
     swal({

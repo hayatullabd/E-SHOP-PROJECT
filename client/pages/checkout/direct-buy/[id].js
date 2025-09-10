@@ -70,7 +70,7 @@ const DirectBuy = () => {
     },
   });
   // -------------------find product using id----------------
-  const productUrl = `http://localhost:5000/api/v1/product/${id}`;
+  const productUrl = `https://uu-e-shop-server.vercel.app/api/v1/product/${id}`;
 
   useEffect(() => {
     setLoading(true);

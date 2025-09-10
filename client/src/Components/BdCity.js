@@ -31,7 +31,7 @@ const BdCity = ({
       setSelectedCity(districtName);
       setOpen(false);
       setSearchText("");
-      const url = `http://localhost:5000/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
+      const url = `https://uu-e-shop-server.vercel.app/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
       fetch(url)
         .then((res) => res.json())
         .then((data) => setShippingCost(data?.data?.cost));
