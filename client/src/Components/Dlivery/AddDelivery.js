@@ -20,7 +20,7 @@ const AddDelivery = () => {
   const [postResponse, setPostResponse] = useState(null);
 
   const { data, isLoading, error, refetch } = useQuery('myData', async () => {
-    const response = await fetch('https://e-shop-project-gdkd.vercel.app/api/v1/delivery-cost');
+    const response = await fetch('http://localhost:5000/api/v1/delivery-cost');
     const data = await response.json();
 
     return data;

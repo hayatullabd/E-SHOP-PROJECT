@@ -68,7 +68,7 @@ export default function AuthUser() {
   };
 
   const http = axios.create({
-    baseURL: "https://e-shop-project-gdkd.vercel.app/api/v1",
+    baseURL: "http://localhost:5000/api/v1",
     headers: {
       "Content-type": "application/json",
       Authorization: `Bearer ${token}`,

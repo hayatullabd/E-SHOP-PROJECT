@@ -57,7 +57,7 @@ const AddedProduct = ({
         return { id: item?._id, quantity: item?.quantity };
       });
       const url =
-        "https://e-shop-project-gdkd.vercel.app/api/v1/order/get-total-price";
+        "http://localhost:5000/api/v1/order/get-total-price";
       handlePostMethod(url, productIdAndQuantity, setTotalPriceOfCartItem);
     }
     if (getProductId.length > 0) {

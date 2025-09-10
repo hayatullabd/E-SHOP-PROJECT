@@ -25,7 +25,7 @@ const BDAutoCity = ({ shippingCost, setShippingCost }) => {
   //     setSearchText(name);
   // };
   // const handleSelectCity = () => {
-  //     const url = `https://e-shop-project-gdkd.vercel.app/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
+  //     const url = `http://localhost:5000/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
   //     fetch(url)
   //         .then((res) => res.json())
   //         .then((data) => setShippingCost(data?.data?.cost));
@@ -40,7 +40,7 @@ const BDAutoCity = ({ shippingCost, setShippingCost }) => {
 
   // const handleSelectedUser = (district) => {
 
-  //     const url = `https://e-shop-project-gdkd.vercel.app/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
+  //     const url = `http://localhost:5000/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
   //     fetch(url)
   //         .then((res) => res.json())
   //         .then((data) => setShippingCost(data?.data?.cost));
@@ -57,7 +57,7 @@ const BDAutoCity = ({ shippingCost, setShippingCost }) => {
 
   const { data, isLoading, error } = useQuery("myData", async () => {
     const response = await fetch(
-      "https://e-shop-project-gdkd.vercel.app/api/v1/delivery-cost"
+      "http://localhost:5000/api/v1/delivery-cost"
     );
     const data = await response.json();
 

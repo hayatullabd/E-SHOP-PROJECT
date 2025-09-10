@@ -23,7 +23,7 @@ const OrdersTableItem = ({ order, handleInvoiceModal, refetch }) => {
     updateMethodHook(url, body, refetch);
   };
 
-  let fethUrl = "https://e-shop-project-gdkd.vercel.app/api/v1/order/";
+  let fethUrl = "http://localhost:5000/api/v1/order/";
 
   const handleDeleteOrder = (id) => {
     swal({

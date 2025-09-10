@@ -36,7 +36,7 @@ const UpdateCategory = () => {
     setValue,
   } = useForm();
 
-  let url = `https://e-shop-project-gdkd.vercel.app/api/v1/category/${id}`;
+  let url = `http://localhost:5000/api/v1/category/${id}`;
 
   useEffect(() => {
     fetch(url)
@@ -63,7 +63,7 @@ const UpdateCategory = () => {
     };
     // ------------------------------------------------post method here
     fetch(
-      `https://e-shop-project-gdkd.vercel.app/api/v1/category/${category._id}`,
+      `http://localhost:5000/api/v1/category/${category._id}`,
       {
         method: "PATCH",
         headers: {
