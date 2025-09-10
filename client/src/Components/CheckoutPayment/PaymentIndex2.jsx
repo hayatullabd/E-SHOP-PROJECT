@@ -44,7 +44,7 @@ const PaymentIndex2 = ({ order, walletAmount }) => {
 
     order.walletAmount = walletAmount;
 
-    const url = `https://e-shop-project-two.vercel.app/api/v1/order`;
+    const url = `http://localhost:5000/api/v1/order`;
     useUpdatePostOrder(url, order, successFunction, router);
     setlocalStorageCartItems(0);
     localStorage.removeItem("shopping-cart");

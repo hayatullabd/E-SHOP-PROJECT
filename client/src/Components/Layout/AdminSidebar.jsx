@@ -129,7 +129,7 @@ const AdminSidebar = (props) => {
         
     <div className=" flex items-center justify-start px-5 py-4">
         <Image 
-            src={"/bacola-logo.png"}
+            src={"/logo.png"}
             width={100}
             height={100}
             alt="logo"

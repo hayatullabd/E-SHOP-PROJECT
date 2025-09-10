@@ -70,7 +70,7 @@ const DirectBuy = () => {
     },
   });
   // -------------------find product using id----------------
-  const productUrl = `https://e-shop-project-two.vercel.app/api/v1/product/${id}`;
+  const productUrl = `http://localhost:5000/api/v1/product/${id}`;
 
   useEffect(() => {
     setLoading(true);
@@ -80,7 +80,7 @@ const DirectBuy = () => {
         .then((data) => {
           setProduct({ items: [data.data] });
           setOriginalPriceTotal(data.data.productPrice);
-          setCartTotal(data.data.salePrice);
+          setCartTotal(data?.data?.salePrice);
           setProductId(data.data._id);
           setProductData(data.data);
           if (data?.data?.size) {
@@ -97,8 +97,8 @@ const DirectBuy = () => {
 
   useEffect(() => {
     setCouponDiscount(0);
-    setOriginalPriceTotal(inputSize.productPrice * qyt);
-    setCartTotal(inputSize.salePrice * qyt);
+    setOriginalPriceTotal(inputSize?.productPrice * qyt);
+    setCartTotal(inputSize?.salePrice * qyt);
   }, [product, qyt, inputSize]);
 
   // console.log("form local storage", productIdAndQuantity);
@@ -108,14 +108,14 @@ const DirectBuy = () => {
       {
         product: productData._id,
         name: productData.name,
-        price: inputSize.salePrice,
+        price: inputSize?.salePrice,
         originalProductPrice: inputSize?.productPrice,
         quantity: qyt,
         imageURL: productData?.imageURLs[0],
-        size: inputSize.size,
-        variant: inputSize._id,
+        size: inputSize?.size,
+        variant: inputSize?._id,
         color: userColor,
-        category: productData.category,
+        category: productData?.category,
         subCategory: productData?.subCategory[0],
       },
     ];
@@ -123,7 +123,7 @@ const DirectBuy = () => {
 
   const onSubmitForm = async (data) => {
     setLoading2(true);
-    if (product.items.length < 1) {
+    if (product?.items?.length < 1) {
       return swal("error", "Product cart is empty!!", "error");
     }
     // if (!selectedCity) {

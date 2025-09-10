@@ -18,7 +18,7 @@ const Category = () => {
   const { reolder, setReloader } = useContext(CreateContext);
   //-------------------its reloader use for when we delete or update and set !reolder, then depenciy reloded
 
-  let categoryUrl = `https://e-shop-project-two.vercel.app/api/v1/category/`;
+  let categoryUrl = `http://localhost:5000/api/v1/category/`;
 
   useEffect(() => {
     getFetchFunction(categoryUrl, setCategories);

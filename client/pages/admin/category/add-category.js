@@ -39,7 +39,7 @@ const AddCategory = () => {
       status: data.status,
     };
     // ------------------------------------------------post method here
-    fetch("https://e-shop-project-two.vercel.app/api/v1/category", {
+    fetch("http://localhost:5000/api/v1/category", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
