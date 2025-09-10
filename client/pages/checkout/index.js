@@ -92,7 +92,7 @@ const Checkout = () => {
       const productIdAndQuantity = localStorageCartItems?.items?.map((item) => {
         return { id: item?._id, quantity: item?.quantity };
       });
-      const url = "http://localhost:5000/api/v1/order/get-total-price";
+      const url = "https://e-shop-project-gdkd.vercel.app/api/v1/order/get-total-price";
       handlePostMethod(url, productIdAndQuantity, setTotalPriceOfCartItem);
     }
     if (localStorageCartItems?.items?.length > 0) {
