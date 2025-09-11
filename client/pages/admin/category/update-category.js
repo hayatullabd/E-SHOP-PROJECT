@@ -36,7 +36,7 @@ const UpdateCategory = () => {
     setValue,
   } = useForm();
 
-  let url = `https://uu-e-shop-server.vercel.app/api/v1/category/${id}`;
+  let url = `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/category/${id}`;
 
   useEffect(() => {
     fetch(url)
@@ -63,7 +63,7 @@ const UpdateCategory = () => {
     };
     // ------------------------------------------------post method here
     fetch(
-      `https://uu-e-shop-server.vercel.app/api/v1/category/${category._id}`,
+      `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/category/${category._id}`,
       {
         method: "PATCH",
         headers: {

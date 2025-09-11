@@ -48,7 +48,7 @@ const AddBalance = ({ refetch, setBalanceAddShow }) => {
 
   const addAcount = (data) => {
     const url =
-      "https://uu-e-shop-server.vercel.app/api/v2/accounts/opening-balance";
+      "https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v2/accounts/opening-balance";
     const body = {
       accountName: data.accountName,
       amount: Number(data.amount),

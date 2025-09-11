@@ -68,7 +68,7 @@ export default function AuthUser() {
   };
 
   const http = axios.create({
-    baseURL: "https://uu-e-shop-server.vercel.app/api/v1",
+    baseURL: "https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1",
     headers: {
       "Content-type": "application/json",
       Authorization: `Bearer ${token}`,

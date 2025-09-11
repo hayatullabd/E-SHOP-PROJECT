@@ -25,7 +25,7 @@ const BDAutoCity = ({ shippingCost, setShippingCost }) => {
   //     setSearchText(name);
   // };
   // const handleSelectCity = () => {
-  //     const url = `https://uu-e-shop-server.vercel.app/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
+  //     const url = `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
   //     fetch(url)
   //         .then((res) => res.json())
   //         .then((data) => setShippingCost(data?.data?.cost));
@@ -40,7 +40,7 @@ const BDAutoCity = ({ shippingCost, setShippingCost }) => {
 
   // const handleSelectedUser = (district) => {
 
-  //     const url = `https://uu-e-shop-server.vercel.app/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
+  //     const url = `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/delivery-cost/get-delivery-for-user?city=${districtName}`;
   //     fetch(url)
   //         .then((res) => res.json())
   //         .then((data) => setShippingCost(data?.data?.cost));
@@ -57,7 +57,7 @@ const BDAutoCity = ({ shippingCost, setShippingCost }) => {
 
   const { data, isLoading, error } = useQuery("myData", async () => {
     const response = await fetch(
-      "https://uu-e-shop-server.vercel.app/api/v1/delivery-cost"
+      "https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/delivery-cost"
     );
     const data = await response.json();
 

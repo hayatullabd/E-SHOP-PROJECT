@@ -1,5 +1,5 @@
-const base_url = "https://uu-e-shop-server.vercel.app/api/v1";
-export const base_url_v2 = "https://uu-e-shop-server.vercel.app/api/v2";
+const base_url = "https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1";
+export const base_url_v2 = "https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v2";
 
 export const products = async (query = "") => {
   const response = await fetch(`${base_url}/product?status=true&${query}`);
@@ -70,7 +70,7 @@ export const fetchProduct = async (id) => {
 };
 export const getCategories = async () => {
   const response = await fetch(
-    `https://uu-e-shop-server.vercel.app/api/v1/category?status=true`
+    `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/category?status=true`
   );
   const json = await response.json();
   return json;
@@ -78,7 +78,7 @@ export const getCategories = async () => {
 
 export const getCategories2 = async () => {
   const response = await fetch(
-    `https://uu-e-shop-server.vercel.app/api/v1/category`
+    `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/category`
   );
   const json = await response.json();
   return json;
@@ -97,7 +97,7 @@ export const getCoupons = async (query = "") => {
 
 export const getCategoriesItem = async () => {
   const response = await fetch(
-    `https://uu-e-shop-server.vercel.app/api/v1/category`
+    `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/category`
   );
   const json = await response.json();
   return json;
@@ -105,7 +105,7 @@ export const getCategoriesItem = async () => {
 
 export const getCategoriesAndSubCategory = async () => {
   const response = await fetch(
-    `https://uu-e-shop-server.vercel.app/api/v1/category/category-and-subcategory`
+    `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/category/category-and-subcategory`
   );
   const json = await response.json();
   return json;

@@ -53,7 +53,7 @@ const ProductDetails = () => {
   const { data, refetch, isSuccess, isLoading } = useQuery({
     queryKey: ["product", id],
     queryFn: () =>
-      fetch(`https://uu-e-shop-server.vercel.app/api/v1/product/${id}`).then(
+      fetch(`https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/product/${id}`).then(
         (res) => res.json()
       ),
   });

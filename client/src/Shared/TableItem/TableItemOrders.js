@@ -23,7 +23,7 @@ const OrdersTableItem = ({ order, handleInvoiceModal, refetch }) => {
     updateMethodHook(url, body, refetch);
   };
 
-  let fethUrl = "https://uu-e-shop-server.vercel.app/api/v1/order/";
+  let fethUrl = "https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/order/";
 
   const handleDeleteOrder = (id) => {
     swal({

@@ -131,7 +131,7 @@ const UserInformation = ({ user, getProductId, setGetProductId }) => {
         return { id: item?._id, quantity: item?.quantity };
       });
       const url =
-        "https://uu-e-shop-server.vercel.app/api/v1/order/get-total-price";
+        "https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/order/get-total-price";
       handlePostMethod(url, productIdAndQuantity, setTotalPriceOfCartItem);
     }
     if (getProductId.length > 0) {

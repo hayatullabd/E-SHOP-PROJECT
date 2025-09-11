@@ -121,7 +121,7 @@ const AddProduct = () => {
     // console.log(product)
     // ------------------------------------------------post method here
 
-    fetch("https://uu-e-shop-server.vercel.app/api/v1/product", {
+    fetch("https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/product", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

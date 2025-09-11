@@ -44,17 +44,17 @@ const Product = () => {
   // ---------------for pagination-----------------------
 
   const productUrl = {
-    url: `https://uu-e-shop-server.vercel.app/api/v1/product/?limit=10000&page=1&sort=-createdAt`,
+    url: `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/product/?limit=10000&page=1&sort=-createdAt`,
   };
 
   //---------------------------------------------------------------catgories filter-----------------------------
   const handleFilterWithParantCategory = async (event) => {
-    productUrl.url = `https://uu-e-shop-server.vercel.app/api/v1/product/?limit=10000&page=1&category=${event.target.value}`;
+    productUrl.url = `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/product/?limit=10000&page=1&category=${event.target.value}`;
     getFetchFunction(productUrl.url, setProducts);
   };
 
   const handleFilterWithParantCategory2 = async (event) => {
-    productUrl.url = `https://uu-e-shop-server.vercel.app/api/v1/product/?limit=10000&page=1&subCategory=${event.target.value}`;
+    productUrl.url = `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/product/?limit=10000&page=1&subCategory=${event.target.value}`;
     getFetchFunction(productUrl.url, setProducts);
   };
 

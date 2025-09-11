@@ -39,7 +39,7 @@ const AddCategory = () => {
       status: data.status,
     };
     // ------------------------------------------------post method here
-    fetch("https://uu-e-shop-server.vercel.app/api/v1/category", {
+    fetch("https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/category", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
