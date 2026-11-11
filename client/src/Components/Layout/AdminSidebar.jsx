@@ -7,7 +7,7 @@ import {
   MdOutlineDashboard,
   MdOutlineLocalShipping,
 } from "react-icons/md";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 
 import { FaJediOrder, FaRegUser, FaUncharted } from "react-icons/fa";
 import { SiCoursera } from "react-icons/si";
@@ -104,7 +104,8 @@ const settingList = [
 
 const AdminSidebar = (props) => {
   const mobile = true;
-  const pathname = usePathname();
+  const router = useRouter();
+  const pathname = router.pathname;
   const isActive = (href) => {
     return pathname === href;
   };
