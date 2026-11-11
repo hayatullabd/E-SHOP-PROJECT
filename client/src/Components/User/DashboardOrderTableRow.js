@@ -16,7 +16,7 @@ const DashboardOrderTableRow = ({ order, dataRight }) => {
         <p className="text-gray-600">{time}</p>
       </td>
       <td className="p-3 text-left">
-        <p className="uppercase">{order.paymentDetails.method}</p>
+        <p className="uppercase">{order?.paymentDetails?.method || order?.paymentMethod || "COD"}</p>
       </td>
       <td className="p-3 text-left">
         <span

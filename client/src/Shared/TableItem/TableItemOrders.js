@@ -54,7 +54,7 @@ const OrdersTableItem = ({ order, handleInvoiceModal, refetch }) => {
           : order.shippingAddress.address.slice(0, 20) + "..."}
       </td>
       <td>{order.shippingAddress.phone}</td>
-      <td>{order.paymentDetails.method}</td>
+      <td>{order?.paymentDetails?.method || order?.paymentMethod || "COD"}</td>
       <td>{order.totalAmount}TK.</td>
       <td>
         <Link

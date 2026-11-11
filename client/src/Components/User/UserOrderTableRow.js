@@ -14,7 +14,7 @@ const UserOrderTableRow = ({ order, handleInvoiceModal }) => {
         <p className="text-gray-600">{time}</p>
       </td>
       <td className="p-3">
-        <p>{order.paymentDetails.method}</p>
+        <p>{order?.paymentDetails?.method || order?.paymentMethod || "COD"}</p>
       </td>
       <td className="p-3">
         <span
