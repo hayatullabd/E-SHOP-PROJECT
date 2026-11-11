@@ -38,7 +38,7 @@ const PaymentIndex = ({ order, walletAmount }) => {
 
     order.walletAmount = walletAmount;
 
-    const url = `https://uu-e-shop-server-e7w2ppakl-hayatullabds-projects.vercel.app/api/v1/order`;
+    const url = `https://e-shop-project-omega.vercel.app/api/v1/order`;
     useUpdatePostOrder(url, order, successFunction, router);
   };
 
