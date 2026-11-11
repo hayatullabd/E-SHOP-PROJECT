@@ -24,7 +24,7 @@ const Footers = () => {
                   {/* <Image src={logo} alt=""/> */}
                   <Link href={"/"} className="">
                     <Image
-                      src={data?.data?.logo}
+                      src={data?.data?.logo || "/logo.png"}
                       alt="logo"
                       width={200}
                       height={100}
