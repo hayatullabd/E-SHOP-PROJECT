@@ -16,9 +16,9 @@ const BestCategroySellChart = () => {
         const response = await axios.get(`${server_url}/order`); // Replace with your API endpoint for fetching order data
         const orders = await response.data.data.result;
 
-        const categoryCounts = orders.reduce((acc, order) => {
-          order.orderItem.forEach((item) => {
-            const category = item.category;
+        const categoryCounts = (orders || []).reduce((acc, order) => {
+          (order?.orderItem || []).forEach((item) => {
+            const category = item?.category || "General";
             if (acc[category]) {
               acc[category] += 1;
             } else {

@@ -31,8 +31,8 @@ const OrderChart = () => {
         const response = await axios.get(`${server_url}/order`); // Replace with your API endpoint for fetching order data
         const orders = response.data.data.result;
 
-        const orderCounts = orders.reduce((acc, order) => {
-          const date = new Date(order.date);
+        const orderCounts = (orders || []).reduce((acc, order) => {
+          const date = new Date(order?.date || order?.createdAt || Date.now());
           const formattedDate = `${date.getFullYear()}-${
             date.getMonth() + 1
           }-${date.getDate()}`;
