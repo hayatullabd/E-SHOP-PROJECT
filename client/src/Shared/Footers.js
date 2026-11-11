@@ -131,7 +131,7 @@ const Footers = () => {
               >
                 Design & Developed By{" "}
                 <span className="font-bold text-primary cursor-pointer">
-                  Hayatulla Kha
+                  UU Team
                 </span>
               </p>
             </div>
