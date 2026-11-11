@@ -7,7 +7,7 @@ const {
     getExpenseCalculateSubItemByIdService,
     deleteExpenseCalculateSubItemByIdService,
 } = require("./ExpenseCalculateSubItemServices");
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 const ExpenseCalculateSubItem = require("./ExpenseCalculateSubItemModels");
 const { ObjectId } = mongoose.Types;
 

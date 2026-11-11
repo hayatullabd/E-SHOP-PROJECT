@@ -7,7 +7,7 @@ const {
     getExpensesCategoryByIdService,
     deleteExpensesCategoryByIdService,
 } = require("./ExpensesCategoryServices");
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 const HistoryModel = require("../../AccountingModule/History/Models/HistoryModel");
 const { calculateCategoryTotals } = require("../../utils/retunTotalOfExpneseIncome");
 

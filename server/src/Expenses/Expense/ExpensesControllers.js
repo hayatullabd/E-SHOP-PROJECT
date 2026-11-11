@@ -7,7 +7,7 @@ const {
     getExpensesByIdService,
     deleteExpensesByIdService,
 } = require("./ExpensesServices");
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 const { updateAccountAndHistoryEIRService } = require("../../AccountingModule/AccountsBalance/Services/AccountsServices");
 const { createReturnExpenseService } = require("../ReturnExpenseMoney/ReturnExpenseServices");
 const { getAccountBalanceWithId } = require("../../AccountingModule/AccountsBalance/Services/AccountsServices");

@@ -10,7 +10,7 @@ const {
 } = require("../Services/AccountsServices");
 const Accounts = require("../Models/AccountsModel");
 const { getAccountsHisotryService, getHistoryByIdService, createHistory } = require("../../History/Services/historyServices");
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 const AccountingHistory = require("../../History/Models/HistoryModel");
 
 

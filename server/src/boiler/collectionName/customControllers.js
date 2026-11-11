@@ -7,7 +7,7 @@ const {
     getExpensesByIdService,
     deleteExpensesByIdService,
 } = require("./customServices");
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 
 exports.getExpenses = async (req, res) => {
     try {

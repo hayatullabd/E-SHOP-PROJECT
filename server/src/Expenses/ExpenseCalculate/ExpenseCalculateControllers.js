@@ -7,7 +7,7 @@ const {
     getExpenseCalculateByIdService,
     deleteExpenseCalculateByIdService,
 } = require("./ExpenseCalculateServices");
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 const ExpenseCalculate = require("./ExpenseCalculateModels");
 const ExpenseCalculateSubItem = require("../ExpenseCalculateSubItem/ExpenseCalculateSubItemModels");
 
