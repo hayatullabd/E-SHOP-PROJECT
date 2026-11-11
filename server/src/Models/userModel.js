@@ -97,5 +97,5 @@ userSchema.methods.comparePassword = function (password, hash) {
   return isPasswordValid;
 };
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema, "Users");
 module.exports = User;
