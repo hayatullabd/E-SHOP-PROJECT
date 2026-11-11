@@ -52,10 +52,7 @@ const Login = () => {
   };
 
 
-  useEffect(()=>{
-    setValue("email","hayatullabd@gmail.com")
-    setValue("password","01781115586")
-  },[])
+  /* Removed hardcoded default credentials */
 
   /*   useEffect(() => {
     console.log("this is form ure", from);
